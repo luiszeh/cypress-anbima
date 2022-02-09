@@ -1,0 +1,52 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Login site CWI",
+    "line": 1,
+    "id": "login-site-cwi",
+    "tags": [],
+    "uri": "Login.feature",
+    "elements": [
+      {
+        "id": "login-site-cwi;visualizar-opção-de-recuperar-senha-esquecida",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Visualizar opção de recuperar senha esquecida",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "acesso o site CWI",
+            "result": {
+              "status": "passed",
+              "duration": 5001000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "acesso a pagina de login",
+            "result": {
+              "status": "passed",
+              "duration": 2205000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "devo visualizar botao de recuperar senha esquecida",
+            "result": {
+              "status": "passed",
+              "duration": 31000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

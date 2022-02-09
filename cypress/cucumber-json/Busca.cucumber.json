@@ -1,0 +1,53 @@
+[
+  {
+    "description": "Eu como usuário da Anbima\nQuero realizar uma pesquisa\nPara encontrar um ativo do tipo Debêntures",
+    "keyword": "Funcionalidade",
+    "name": "Busca",
+    "line": 3,
+    "id": "busca",
+    "tags": [],
+    "uri": "Busca.feature",
+    "elements": [
+      {
+        "id": "busca;busca-por-código-b3",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "Busca por Código B3",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 10,
+            "name": "que estou na página inicial",
+            "result": {
+              "status": "passed",
+              "duration": 6148000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 13,
+            "name": "realizo a busca por AALM11, utilizando a opção Debêntures",
+            "result": {
+              "status": "passed",
+              "duration": 854000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 14,
+            "name": "visualizo o ativo AALM11 no resultado da busca",
+            "result": {
+              "status": "passed",
+              "duration": 1728000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -14,7 +14,7 @@ class BuscaPage {
     buscar() {
         cy.get(buscaElements.input_busca())
             .click()
-            .type('AALM11')
+            .type()
         cy.get(buscaElements.button_debentures())
             .click()
     }

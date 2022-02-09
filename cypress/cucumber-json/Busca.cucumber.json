@@ -23,7 +23,7 @@
             "name": "que estou na página inicial",
             "result": {
               "status": "passed",
-              "duration": 6148000000
+              "duration": 30343000000
             }
           },
           {
@@ -32,8 +32,9 @@
             "line": 13,
             "name": "realizo a busca por AALM11, utilizando a opção Debêntures",
             "result": {
-              "status": "passed",
-              "duration": 854000000
+              "status": "failed",
+              "duration": 596000000,
+              "error_message": "CypressError: `cy.type()` can only accept a string or number. You passed in: `undefined`\n\nhttps://on.cypress.io/type\n    at Context.type (https://data.anbima.com.br/__cypress/runner/cypress_runner.js:154734:76)\n    at Context.<anonymous> (https://data.anbima.com.br/__cypress/runner/cypress_runner.js:173116:19)\nFrom Your Spec Code:\n    at BuscaPage.buscar (https://data.anbima.com.br/__cypress/tests?p=cypress\\integration\\Busca.feature:108:51)\n    at Context.eval (https://data.anbima.com.br/__cypress/tests?p=cypress\\integration\\Busca.feature:144:13)\n    at Context.resolveAndRunStepDefinition (https://data.anbima.com.br/__cypress/tests?p=cypress\\integration\\Busca.feature:10604:29)\n    at Context.eval (https://data.anbima.com.br/__cypress/tests?p=cypress\\integration\\Busca.feature:9925:35)"
             }
           },
           {
@@ -42,8 +43,7 @@
             "line": 14,
             "name": "visualizo o ativo AALM11 no resultado da busca",
             "result": {
-              "status": "passed",
-              "duration": 1728000000
+              "status": "skipped"
             }
           }
         ]

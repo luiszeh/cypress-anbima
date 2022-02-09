@@ -10,9 +10,13 @@ Given("que estou na página inicial", () => {
     buscaPage.acessarSite();
 })
 
+// ------------------------- WHEN -------------------------------------------
+
 When("realizo a busca por AALM11, utilizando a opção Debêntures", () => {
     buscaPage.buscar();
 })
+
+// ------------------------- THEN -------------------------------------------
 
 Then("visualizo o ativo AALM11 no resultado da busca", () => {
     cy.get(buscaElements.resultado_busca())

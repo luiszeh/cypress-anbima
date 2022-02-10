@@ -16,14 +16,11 @@ When("realizo a busca por {string}, utilizando a opção Debêntures", (debentur
     buscaPage.buscar(debenture);
 })
 
-When("realizo a busca por uma Debênture {string}", (debentureInexistente) => {
-    buscaPage.buscarInexistente(debentureInexistente);
-})
-
 // ------------------------------- THEN --------------------------------------
 
 Then("visualizo o ativo {string} no resultado da busca", (debentureThen) => {
-    cy.get(buscaElements.resultadoBusca(debentureThen))
+         cy.get(buscaElements.resultadoBusca())
+        .should('have.text', debentureThen)
 })
 
 Then("visualizo que a busca não foi encontrada", () => {

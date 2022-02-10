@@ -11,7 +11,7 @@ Contexto:
 
 Cenário: Busca por Código B3
   Quando realizo a busca por "AALM11", utilizando a opção Debêntures
-  Então visualizo o ativo "AALM11" no resultado da busca
+  Então visualizo o ativo "XXX" no resultado da busca
 
 Cenário: Busca por ISIN
   Quando realizo a busca por "BRAALMDBS009", utilizando a opção Debêntures
@@ -23,14 +23,14 @@ Cenário: Busca por Emissor
 
 Cenário: Busca por Agente
   Quando realizo a busca por "OLIVEIRA TRUST DTVM", utilizando a opção Debêntures
-  Então visualizo o ativo "AALM11" no resultado da busca
+  Então visualizo o ativo "XXX" no resultado da busca
 
 Cenário: Busca por CNPJ
   Quando realizo a busca por "08213823000107", utilizando a opção Debêntures
   Então visualizo o ativo "AALM11" no resultado da busca
 
 Cenário: Busca por uma Debênture inexistente
-  Quando realizo a busca por uma Debênture "INEXISTENTE"
+  Quando realizo a busca por "INEXISTENTE", utilizando a opção Debêntures
   Então visualizo que a busca não foi encontrada
 
 # Given = Dado

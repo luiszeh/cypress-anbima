@@ -6,7 +6,7 @@
     "line": 3,
     "id": "busca",
     "tags": [],
-    "uri": "busca.feature",
+    "uri": "Busca.feature",
     "elements": [
       {
         "id": "busca;busca-por-código-b3",
@@ -23,7 +23,7 @@
             "name": "que estou na página inicial",
             "result": {
               "status": "passed",
-              "duration": 6403000000
+              "duration": 8627000000
             }
           },
           {
@@ -33,17 +33,18 @@
             "name": "realizo a busca por \"AALM11\", utilizando a opção Debêntures",
             "result": {
               "status": "passed",
-              "duration": 733000000
+              "duration": 1411000000
             }
           },
           {
             "arguments": [],
             "keyword": "Então ",
             "line": 14,
-            "name": "visualizo o ativo \"AALM11\" no resultado da busca",
+            "name": "visualizo o ativo \"XXX\" no resultado da busca",
             "result": {
-              "status": "passed",
-              "duration": 1338000000
+              "status": "failed",
+              "duration": 20081000000,
+              "error_message": "AssertionError: Timed out retrying after 20000ms: expected '<p#item-nome-0.list-item__title>' to have text 'XXX', but the text was 'AALM11'\n    + expected - actual\n\n    -'AALM11'\n    +'XXX'\n\n    at Context.eval (https://data.anbima.com.br/__cypress/tests?p=cypress\\integration\\Busca.feature:149:42)\n    at Context.resolveAndRunStepDefinition (https://data.anbima.com.br/__cypress/tests?p=cypress\\integration\\Busca.feature:10608:29)\n    at Context.eval (https://data.anbima.com.br/__cypress/tests?p=cypress\\integration\\Busca.feature:9929:35)"
             }
           }
         ]
@@ -63,7 +64,7 @@
             "name": "que estou na página inicial",
             "result": {
               "status": "passed",
-              "duration": 10637000000
+              "duration": 7007000000
             }
           },
           {
@@ -73,7 +74,7 @@
             "name": "realizo a busca por \"BRAALMDBS009\", utilizando a opção Debêntures",
             "result": {
               "status": "passed",
-              "duration": 1472000000
+              "duration": 1674000000
             }
           },
           {
@@ -83,7 +84,7 @@
             "name": "visualizo o ativo \"AALM11\" no resultado da busca",
             "result": {
               "status": "passed",
-              "duration": 1560000000
+              "duration": 2353000000
             }
           }
         ]
@@ -103,7 +104,7 @@
             "name": "que estou na página inicial",
             "result": {
               "status": "passed",
-              "duration": 6889000000
+              "duration": 8569000000
             }
           },
           {
@@ -113,7 +114,7 @@
             "name": "realizo a busca por \"AURA ALMAS MINERACAO S.A\", utilizando a opção Debêntures",
             "result": {
               "status": "passed",
-              "duration": 1343000000
+              "duration": 2190000000
             }
           },
           {
@@ -123,7 +124,7 @@
             "name": "visualizo o ativo \"AALM11\" no resultado da busca",
             "result": {
               "status": "passed",
-              "duration": 1738000000
+              "duration": 2673000000
             }
           }
         ]
@@ -143,7 +144,7 @@
             "name": "que estou na página inicial",
             "result": {
               "status": "passed",
-              "duration": 7670000000
+              "duration": 9075000000
             }
           },
           {
@@ -153,17 +154,17 @@
             "name": "realizo a busca por \"OLIVEIRA TRUST DTVM\", utilizando a opção Debêntures",
             "result": {
               "status": "passed",
-              "duration": 1379000000
+              "duration": 2302000000
             }
           },
           {
             "arguments": [],
             "keyword": "Então ",
             "line": 26,
-            "name": "visualizo o ativo \"AALM11\" no resultado da busca",
+            "name": "visualizo o ativo \"XXX\" no resultado da busca",
             "result": {
-              "status": "passed",
-              "duration": 1886000000
+              "status": "failed",
+              "error_message": "AssertionError: Timed out retrying after 20000ms: expected '<p#item-nome-0.list-item__title>' to have text 'XXX', but the text was 'AALM11'\n    + expected - actual\n\n    -'AALM11'\n    +'XXX'\n\n    at Context.eval (https://data.anbima.com.br/__cypress/tests?p=cypress\\integration\\Busca.feature:149:42)\n    at Context.resolveAndRunStepDefinition (https://data.anbima.com.br/__cypress/tests?p=cypress\\integration\\Busca.feature:10608:29)\n    at Context.eval (https://data.anbima.com.br/__cypress/tests?p=cypress\\integration\\Busca.feature:9929:35)"
             }
           }
         ]
@@ -183,7 +184,7 @@
             "name": "que estou na página inicial",
             "result": {
               "status": "passed",
-              "duration": 6887000000
+              "duration": 9194000000
             }
           },
           {
@@ -193,7 +194,7 @@
             "name": "realizo a busca por \"08213823000107\", utilizando a opção Debêntures",
             "result": {
               "status": "passed",
-              "duration": 1377000000
+              "duration": 2094000000
             }
           },
           {
@@ -203,7 +204,7 @@
             "name": "visualizo o ativo \"AALM11\" no resultado da busca",
             "result": {
               "status": "passed",
-              "duration": 1744000000
+              "duration": 2532000000
             }
           }
         ]
@@ -223,17 +224,17 @@
             "name": "que estou na página inicial",
             "result": {
               "status": "passed",
-              "duration": 7156000000
+              "duration": 9682000000
             }
           },
           {
             "arguments": [],
             "keyword": "Quando ",
             "line": 33,
-            "name": "realizo a busca por uma Debênture \"INEXISTENTE\"",
+            "name": "realizo a busca por \"INEXISTENTE\", utilizando a opção Debêntures",
             "result": {
               "status": "passed",
-              "duration": 968000000
+              "duration": 2144000000
             }
           },
           {
@@ -243,7 +244,7 @@
             "name": "visualizo que a busca não foi encontrada",
             "result": {
               "status": "passed",
-              "duration": 2541000000
+              "duration": 2635000000
             }
           }
         ]

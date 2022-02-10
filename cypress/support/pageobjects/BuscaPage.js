@@ -11,50 +11,18 @@ class BuscaPage {
     }
 
     // Realiza a busca por debentures
-    buscarB3() {
+    buscar(debenture) {
         cy.get(buscaElements.inputBusca())
             .click()
-            .type('AALM11')
+            .type(debenture)
         cy.get(buscaElements.buttonDebentures())
             .click()
     }
 
-    buscarIsin() {
+    buscarInexistente(debentureInexistente) {
         cy.get(buscaElements.inputBusca())
             .click()
-            .type('BRAALMDBS009')
-        cy.get(buscaElements.buttonDebentures())
-            .click()
-    }
-
-    buscarEmissor() {
-        cy.get(buscaElements.inputBusca())
-            .click()
-            .type('AURA ALMAS MINERACAO S.A')
-        cy.get(buscaElements.buttonDebentures())
-            .click()
-    }
-
-    buscarAgente() {
-        cy.get(buscaElements.inputBusca())
-            .click()
-            .type('OLIVEIRA TRUST DTVM S/A')
-        cy.get(buscaElements.buttonDebentures())
-            .click()
-    }
-
-    buscarCnpj() {
-        cy.get(buscaElements.inputBusca())
-            .click()
-            .type('08213823000107')
-        cy.get(buscaElements.buttonDebentures())
-            .click()
-    }
-
-    buscarInexistente() {
-        cy.get(buscaElements.inputBusca())
-            .click()
-            .type('INEXISTENTE')
+            .type(debentureInexistente)
         cy.get(buscaElements.buttonDebentures())
             .click()
     }

@@ -10,13 +10,25 @@ Given("que estou na página inicial", () => {
     buscaPage.acessarSite();
 })
 
-When("realizo a busca por AALM11, utilizando a opção Debêntures", () => {
-    buscaPage.buscar();
+// ------------------------------- WHEN --------------------------------------
+
+When("realizo a busca por {string}, utilizando a opção Debêntures", (debenture) => {
+    buscaPage.buscar(debenture);
 })
 
-Then("visualizo o ativo AALM11 no resultado da busca", () => {
-    cy.get(buscaElements.resultado_busca())
-        .should('have.text', 'AALM11')
+When("realizo a busca por uma Debênture {string}", (debentureInexistente) => {
+    buscaPage.buscarInexistente(debentureInexistente);
+})
+
+// ------------------------------- THEN --------------------------------------
+
+Then("visualizo o ativo {string} no resultado da busca", (debentureThen) => {
+    cy.get(buscaElements.resultadoBusca(debentureThen))
+})
+
+Then("visualizo que a busca não foi encontrada", () => {
+    cy.get(buscaElements.resultadoBuscaInexistente())
+        .should('be.visible')
 })
 
 // aqui "linkamos" a feature com as funções a serem executadas

@@ -11,18 +11,20 @@ class BuscaPage {
     }
 
     // Realiza a busca por debentures
-    buscar() {
-        cy.get(buscaElements.input_busca())
+    buscar(debenture) {
+        cy.get(buscaElements.inputBusca())
             .click()
-            .type('AALM11')
-        cy.get(buscaElements.button_debentures())
+            .type(debenture)
+        cy.get(buscaElements.buttonDebentures())
             .click()
     }
 
-    click_detalhes() {
-        cy.get(buscaElements.button_detalhes())
+    buscarInexistente(debentureInexistente) {
+        cy.get(buscaElements.inputBusca())
             .click()
-
+            .type(debentureInexistente)
+        cy.get(buscaElements.buttonDebentures())
+            .click()
     }
 }
 

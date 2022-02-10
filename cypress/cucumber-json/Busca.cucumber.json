@@ -6,7 +6,7 @@
     "line": 3,
     "id": "busca",
     "tags": [],
-    "uri": "Busca.feature",
+    "uri": "busca.feature",
     "elements": [
       {
         "id": "busca;busca-por-código-b3",
@@ -23,27 +23,227 @@
             "name": "que estou na página inicial",
             "result": {
               "status": "passed",
-              "duration": 6148000000
+              "duration": 6403000000
             }
           },
           {
             "arguments": [],
             "keyword": "Quando ",
             "line": 13,
-            "name": "realizo a busca por AALM11, utilizando a opção Debêntures",
+            "name": "realizo a busca por \"AALM11\", utilizando a opção Debêntures",
             "result": {
               "status": "passed",
-              "duration": 854000000
+              "duration": 733000000
             }
           },
           {
             "arguments": [],
             "keyword": "Então ",
             "line": 14,
-            "name": "visualizo o ativo AALM11 no resultado da busca",
+            "name": "visualizo o ativo \"AALM11\" no resultado da busca",
             "result": {
               "status": "passed",
-              "duration": 1728000000
+              "duration": 1338000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "busca;busca-por-isin",
+        "keyword": "Scenario",
+        "line": 16,
+        "name": "Busca por ISIN",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 10,
+            "name": "que estou na página inicial",
+            "result": {
+              "status": "passed",
+              "duration": 10637000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 17,
+            "name": "realizo a busca por \"BRAALMDBS009\", utilizando a opção Debêntures",
+            "result": {
+              "status": "passed",
+              "duration": 1472000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 18,
+            "name": "visualizo o ativo \"AALM11\" no resultado da busca",
+            "result": {
+              "status": "passed",
+              "duration": 1560000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "busca;busca-por-emissor",
+        "keyword": "Scenario",
+        "line": 20,
+        "name": "Busca por Emissor",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 10,
+            "name": "que estou na página inicial",
+            "result": {
+              "status": "passed",
+              "duration": 6889000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 21,
+            "name": "realizo a busca por \"AURA ALMAS MINERACAO S.A\", utilizando a opção Debêntures",
+            "result": {
+              "status": "passed",
+              "duration": 1343000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 22,
+            "name": "visualizo o ativo \"AALM11\" no resultado da busca",
+            "result": {
+              "status": "passed",
+              "duration": 1738000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "busca;busca-por-agente",
+        "keyword": "Scenario",
+        "line": 24,
+        "name": "Busca por Agente",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 10,
+            "name": "que estou na página inicial",
+            "result": {
+              "status": "passed",
+              "duration": 7670000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 25,
+            "name": "realizo a busca por \"OLIVEIRA TRUST DTVM\", utilizando a opção Debêntures",
+            "result": {
+              "status": "passed",
+              "duration": 1379000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 26,
+            "name": "visualizo o ativo \"AALM11\" no resultado da busca",
+            "result": {
+              "status": "passed",
+              "duration": 1886000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "busca;busca-por-cnpj",
+        "keyword": "Scenario",
+        "line": 28,
+        "name": "Busca por CNPJ",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 10,
+            "name": "que estou na página inicial",
+            "result": {
+              "status": "passed",
+              "duration": 6887000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 29,
+            "name": "realizo a busca por \"08213823000107\", utilizando a opção Debêntures",
+            "result": {
+              "status": "passed",
+              "duration": 1377000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 30,
+            "name": "visualizo o ativo \"AALM11\" no resultado da busca",
+            "result": {
+              "status": "passed",
+              "duration": 1744000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "busca;busca-por-uma-debênture-inexistente",
+        "keyword": "Scenario",
+        "line": 32,
+        "name": "Busca por uma Debênture inexistente",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 10,
+            "name": "que estou na página inicial",
+            "result": {
+              "status": "passed",
+              "duration": 7156000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 33,
+            "name": "realizo a busca por uma Debênture \"INEXISTENTE\"",
+            "result": {
+              "status": "passed",
+              "duration": 968000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 34,
+            "name": "visualizo que a busca não foi encontrada",
+            "result": {
+              "status": "passed",
+              "duration": 2541000000
             }
           }
         ]

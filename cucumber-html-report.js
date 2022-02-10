@@ -10,8 +10,8 @@ version: "81",
 },
 device: "Local test machine",
 platform: {
-name: "mac",
-version: "Catalina",
+name: "windows",
+version: "win10",
   },
  },
 });

@@ -1,11 +1,11 @@
 class BuscaElements {
 
-  input_busca = () => { return '#form-input-search > input' }
-  button_debentures = () => { return '#form-button-option-debentures' }
-  button_detalhes = () => { return '#item-button-detalhe-0' }
-  resultado_aalm11 = () => { return 'h1' }
-  resultado_busca = () => { return '#item-nome-0' }
-
+  inputBusca = () => { return '#form-input-search > input' }
+  buttonDebentures = () => { return '#form-button-option-debentures' }
+  resultadoAalm11 = () => { return 'h1' }
+  resultadoBusca = () => { return '#item-nome-0' }
+  // resultadoBuscaInexistente = () => { return '.title-normal' }
+  // resultadoBuscaInexistente = () => { return '.title-normal > h3' }
 }
 
 export default BuscaElements;

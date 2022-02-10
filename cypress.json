@@ -1,6 +1,6 @@
 {
     "viewportWidth": 1366,
     "viewportHeight": 768,
-    "defaultCommandTimeout": 10000,
+    "defaultCommandTimeout": 15000,
     "baseUrl": "https://data.anbima.com.br/"
 }

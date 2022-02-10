@@ -6,13 +6,13 @@
     "line": 3,
     "id": "busca",
     "tags": [],
-    "uri": "Busca.feature",
+    "uri": "busca.feature",
     "elements": [
       {
-        "id": "busca;busca-por-código-b3",
+        "id": "busca;busca-por-uma-debênture-inexistente",
         "keyword": "Scenario",
-        "line": 12,
-        "name": "Busca por Código B3",
+        "line": 32,
+        "name": "Busca por uma Debênture inexistente",
         "tags": [],
         "type": "scenario",
         "steps": [
@@ -23,27 +23,27 @@
             "name": "que estou na página inicial",
             "result": {
               "status": "passed",
-              "duration": 6148000000
+              "duration": 16277000000
             }
           },
           {
             "arguments": [],
             "keyword": "Quando ",
-            "line": 13,
-            "name": "realizo a busca por AALM11, utilizando a opção Debêntures",
+            "line": 33,
+            "name": "realizo a busca por uma Debênture INEXISTENTE",
             "result": {
               "status": "passed",
-              "duration": 854000000
+              "duration": 2226000000
             }
           },
           {
             "arguments": [],
             "keyword": "Então ",
-            "line": 14,
-            "name": "visualizo o ativo AALM11 no resultado da busca",
+            "line": 34,
+            "name": "não visualizo o ativo AALM11 no resultado da busca",
             "result": {
               "status": "passed",
-              "duration": 1728000000
+              "duration": 35000000
             }
           }
         ]

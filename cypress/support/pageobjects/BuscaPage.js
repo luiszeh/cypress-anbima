@@ -11,18 +11,52 @@ class BuscaPage {
     }
 
     // Realiza a busca por debentures
-    buscar() {
-        cy.get(buscaElements.input_busca())
+    buscarB3() {
+        cy.get(buscaElements.inputBusca())
             .click()
             .type('AALM11')
-        cy.get(buscaElements.button_debentures())
+        cy.get(buscaElements.buttonDebentures())
             .click()
     }
 
-    click_detalhes() {
-        cy.get(buscaElements.button_detalhes())
+    buscarIsin() {
+        cy.get(buscaElements.inputBusca())
             .click()
+            .type('BRAALMDBS009')
+        cy.get(buscaElements.buttonDebentures())
+            .click()
+    }
 
+    buscarEmissor() {
+        cy.get(buscaElements.inputBusca())
+            .click()
+            .type('AURA ALMAS MINERACAO S.A')
+        cy.get(buscaElements.buttonDebentures())
+            .click()
+    }
+
+    buscarAgente() {
+        cy.get(buscaElements.inputBusca())
+            .click()
+            .type('OLIVEIRA TRUST DTVM S/A')
+        cy.get(buscaElements.buttonDebentures())
+            .click()
+    }
+
+    buscarCnpj() {
+        cy.get(buscaElements.inputBusca())
+            .click()
+            .type('08213823000107')
+        cy.get(buscaElements.buttonDebentures())
+            .click()
+    }
+
+    buscarInexistente() {
+        cy.get(buscaElements.inputBusca())
+            .click()
+            .type('INEXISTENTE')
+        cy.get(buscaElements.buttonDebentures())
+            .click()
     }
 }
 
